@@ -2,9 +2,117 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Checkout form</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="webfonts/fonts/fonts.css">
 </head>
 <body>
-	
+
+	<header>
+		<button name="go back" class="button"><i class="fas fa-long-arrow-alt-left"></i> Go back</button>
+		<div class="logo-wrapper">
+			<div class="logo"></div>
+		</div>
+		<button name="sign in" class="button"><i class="fas fa-user"></i> Sign in</button>
+	</header>
+
+	<section class="order-section">
+
+			<div class="left">
+
+				<div class="order-header-wrapper">
+					<h2>
+						<i class="fas fa-clipboard"></i>
+						Your order
+					</h2>
+					<table>
+						<tr>
+							<th>Items</th>
+							<th>Details</th>
+							<th>Price</th>
+							<th>Delivery</th>
+						</tr>
+						<tr>
+							<td>2 documents</td>
+							<td>2 languages</td>
+							<td value="USD:696.06">$ 696.06</td>
+							<td>48 hours*</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="order-buttons-block">
+					<button name="Place order" class="button button-accent">Place order</button>
+					<button name="Print a quote<" class="button">Print a quote</button>
+				</div>
+
+			</div>
+
+			<div class="right">
+				<h2>
+					<i class="far fa-life-ring"></i>
+					Help center
+				</h2>
+				<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+				<address class='address-block'>
+					<a href="tel:+971(0)555 555">+971(0)555 555</a>
+					<a href="mailto:help@qtest.com">help@qtest.com</a>
+				</address>
+			</div>
+
+	</section>
+
+	<section class="form-section">
+
+
+	<form>
+
+		<fieldset>
+
+			<div class="header-wrapper">
+				<h1>Select what you want to translate</h1>
+			</div>
+
+			<div class="radio-wrapper">
+
+				<label class="select-type">
+					<input required hidden type="radio" name="var" value="website"/>
+					<div class="select-wrapper" id="website">
+						<i class="fas fa-check"></i>
+						<p>Website</p>
+					</div>
+				</label>
+
+				<label class="select-type">
+					<input required hidden type="radio" name="var" value="documents"/>
+					<div class="select-wrapper" id="documents">
+						<i class="fas fa-check"></i>
+						<p>Documents</p>
+					</div>
+				</label>
+
+				<label class="select-type">
+					<input required hidden type="radio" name="var" value="social_account"/>
+					<div class="select-wrapper" id="social-account">
+						<i class="fas fa-check"></i>
+						<p>Social Account</p>
+					</div>
+				</label>
+		
+			</div>
+
+			
+		</fieldset>
+
+	</form>
+
+
+
+
+	</section>
+
+
 </body>
 </html>
