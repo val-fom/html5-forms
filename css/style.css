@@ -3,6 +3,11 @@ html {
 }
 
 body {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+	margin: auto;
 	background-color: #eceef4;
 	color: #a5abc5;
 	font-family: 'Proxima Nova', Georgia, sans-serif;
@@ -11,8 +16,6 @@ body {
 }
 
 header {
-	width: 1140px;
-	margin: auto;
 	display: flex;
 	height: 230px;
 	justify-content: space-between;
@@ -83,7 +86,7 @@ h2 > i {
 	top: 25px;
 }
 
-p {
+.order-section p {
 	line-height: 1.5;
 	letter-spacing: 0.02rem;
 	margin-bottom: 18px;
@@ -95,8 +98,6 @@ a {
 }
 
 section {
-	width: 1140px;
-	margin: auto;
 	background-color: #fff;
 	box-sizing: border-box;
 }
