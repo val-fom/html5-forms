@@ -273,7 +273,7 @@ input[name=var]:checked + .select-wrapper > i {
 }
 
 fieldset {
-	margin-bottom: 100px;
+	margin-bottom: 98px;
 }
 
 .fieldset-wrapper > h3 {
@@ -354,15 +354,19 @@ fieldset {
 	text-align: center;
 }
 
+/**
+ * SELECT
+ **/
+
 .select-style {
-	border: 1px solid #d7d8e0;
-	border-radius: 3px;
-	width: 200px;
-	/*overflow: hidden;*/
-	background-color: #f7f7fa;
-	/*padding: 1em;*/
-	box-sizing: border-box;
-	position: relative;
+  display: inline-block;
+  border: 1px solid #d7d8e0;
+  border-radius: 3px;
+  width: 198px;
+  background-color: #f7f7fa;
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 1.8em;
 }
 
 .select-style:after {
@@ -389,11 +393,9 @@ fieldset {
   pointer-events: none;
 }
 
-
 .select-style select {
-	/*padding: 5px 8px;*/
 	text-align-last:center;
-	padding: 1em 4em 1em 1em;
+	padding: 1.2em 4em 1.1em 1em;
 	width: 107%;
 	border: none;
 	box-shadow: none;
@@ -402,9 +404,56 @@ fieldset {
 	-webkit-appearance: none;
 	color: #9098b7;
 	font-size: 1.3em;
+	font-family: 'Metropolis-Regular', Georgia, sans-serif;
+	font-weight: bold;
 }
 
 .select-style select:focus {
 	outline: none;
 }
+
+.languages label {
+  text-transform: uppercase;
+  width: 4.3rem;
+  padding-right: 1.2em;
+  display: inline-block;
+  text-align: right;
+  font-family: 'Metropolis-SemiBold', Georgia, sans-serif;
+}
+
+.languages .wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.languages .wrapper:last-child {
+	margin-bottom: 0;
+}
+
+.languages .wrapper i {
+  margin-left: -0.6em;
+  margin-right: 1.6em;
+  font-size: 1.2em;
+}
+
+#add-language {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Metropolis-SemiBold', Georgia, sans-serif;
+  font-size: 1em;
+  border-color: #d7d8e0;
+  padding: 1.62em 2.4em;
+  margin-bottom: 0;
+}
+
+#add-language > span {
+  font-size: 2em;
+  line-height: 0em;
+  font-family: 'Metropolis-Regular', Georgia, sans-serif;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+}
+
 

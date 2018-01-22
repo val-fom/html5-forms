@@ -143,17 +143,40 @@
 				</div>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class="languages">
+
 				<div class="fieldset-wrapper">
 					<h3>Choose your languages pairings</h3>
 				</div>
 
-				<div class="select-style">
-					<select name="from" id="from">
-						<option value="english">English</option>
-					</select>
+				<div class="wrapper">
+					<label for="fromid">From</label>
+					<div class="select-style">
+						<select name="from" id="from-lang">
+							<option value="english">English</option>
+						</select>
+					</div>
 				</div>
 
+				<div class="wrapper">
+					<label for="to-lang">To</label>
+					<div class="select-style">
+						<select name="to" id="to-lang">
+							<option value="arabic">Arabic</option>
+						</select>
+					</div>
+
+					<div class="select-style">
+						<select name="to" id="">
+							<option value="kurdish">Kurdish</option>
+						</select>
+					</div>
+	
+					<i class="fas fa-trash"></i>
+
+					<button class="button" id="add-language"><span>+</span> Add</button>
+
+				</div>
 
 			</fieldset>
 
