@@ -287,19 +287,19 @@ fieldset {
 }
 
 .fieldset-wrapper > h3:before {
-  counter-increment: section;
-  content: counter(section);
-  box-sizing: border-box;
-  height: 43px;
-  width: 43px;
-  position: absolute;
-  left: -71px;
-  top: 0px;
-  border: 1px solid #6e768f;
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 13px;
-  font-size: 1.8rem;
+	counter-increment: section;
+	content: counter(section);
+	box-sizing: border-box;
+	height: 2.4em;
+	width: 2.4em;
+	position: absolute;
+	left: -4em;
+	top: 0px;
+	border: 2px solid #6e768f;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 0.78em;
+	line-height: 2.4em;
 }
 
 .form-section .button {
@@ -354,4 +354,57 @@ fieldset {
 	text-align: center;
 }
 
+.select-style {
+	border: 1px solid #d7d8e0;
+	border-radius: 3px;
+	width: 200px;
+	/*overflow: hidden;*/
+	background-color: #f7f7fa;
+	/*padding: 1em;*/
+	box-sizing: border-box;
+	position: relative;
+}
+
+.select-style:after {
+  content: '';
+  position: absolute;
+  top: 1.9em;
+  right: 1.6em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 4px 0 4px;
+  border-color: #9098b8 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.select-style:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 3.9em;
+  background-color: #d7d8e0;
+  pointer-events: none;
+}
+
+
+.select-style select {
+	/*padding: 5px 8px;*/
+	text-align-last:center;
+	padding: 1em 4em 1em 1em;
+	width: 107%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	color: #9098b7;
+	font-size: 1.3em;
+}
+
+.select-style select:focus {
+	outline: none;
+}
 
