@@ -5,9 +5,8 @@
 	<title>Checkout form</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/fontawesome-all.css">
-	<link rel="stylesheet" href="webfonts/fonts/fonts.css">
-	<link rel="stylesheet" href="webfonts/metropolis/metropolis.css">
+	<link rel="stylesheet" href="fonts/Metropolis/font.css">
+	<link rel="stylesheet" href="fonts/fontawesome/fontawesome-all.css">
 </head>
 <body>
 
@@ -29,18 +28,20 @@
 					Your order
 				</h2>
 				<table>
-					<tr>
-						<th>Items</th>
-						<th>Details</th>
-						<th>Price</th>
-						<th>Delivery</th>
-					</tr>
-					<tr>
-						<td>2 documents</td>
-						<td>2 languages</td>
-						<td value="USD:696.06">$ 696.06</td>
-						<td>48 hours*</td>
-					</tr>
+					<tbody>
+						<tr>
+							<th>Items</th>
+							<th>Details</th>
+							<th>Price</th>
+							<th>Delivery</th>
+						</tr>
+						<tr>
+							<td>2 documents</td>
+							<td>2 languages</td>
+							<td value="USD:696.06">$ 696.06</td>
+							<td>48 hours*</td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 
@@ -103,39 +104,67 @@
 
 				</div>
 
-
 			</fieldset>
 
 			<fieldset>
-
 				<div class="fieldset-wrapper">
+
 					<h3>Upload your documents</h3>
+					<button name="Place order" class="button">
+						<i class="fas fa-cloud-upload-alt"></i>
+						Upload a new file
+					</button>
+
+					<div class="upload-table-wrapper">
+						<table class="upload-table">
+							<tbody>
+								<tr>
+									<th>File name</th>
+									<th>File size</th>
+									<th>Number of words</th>
+									<th>Remove</th>
+								</tr>
+								<tr>
+									<td><i class="fas fa-file-alt"></i>business_operations.docx</td>
+									<td>78kb</td>
+									<td>842</td>
+									<td><i class="fas fa-trash"></i></td>
+								</tr>
+								<tr>
+									<td><i class="fas fa-file-alt"></i>business_financial.docx</td>
+									<td>26kb</td>
+									<td>2,326</td>
+									<td><i class="fas fa-trash"></i></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
 				</div>
-
 			</fieldset>
 
 			<fieldset>
-
-				<h3>Choose your languages pairings</h3>
-
+				<div class="fieldset-wrapper">
+					<h3>Choose your languages pairings</h3>
+				</div>
 			</fieldset>
 
 			<fieldset>
-
-				<h3>Select your desired tone</h3>
-
+				<div class="fieldset-wrapper">
+					<h3>Select your desired tone</h3>
+				</div>
 			</fieldset>
 
 			<fieldset>
-
-				<h3>Tell us how urgent this job is</h3>
-
+				<div class="fieldset-wrapper">
+					<h3>Tell us how urgent this job is</h3>
+				</div>
 			</fieldset>
 
 			<fieldset>
-
-				<h3>Sign up and choose a payment method</h3>
-
+				<div class="fieldset-wrapper">
+					<h3>Sign up and choose a payment method</h3>
+				</div>
 			</fieldset>
 
 		</form>

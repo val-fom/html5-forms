@@ -10,9 +10,8 @@ body {
 	margin: auto;
 	background-color: #eceef4;
 	color: #a5abc5;
-	font-family: 'mentropolis_regular', 'Proxima Nova', Georgia, sans-serif;
+	font-family: 'Metropolis-Regular', Georgia, sans-serif;
 	font-size: 1.2rem;
-	/*letter-spacing: 0.05rem;*/
 }
 
 header {
@@ -42,6 +41,7 @@ header {
 	background-color: #dadde7;
 	position: relative;
 }
+
 /*triangle*/
 .logo::before {
 	content: '';
@@ -62,21 +62,28 @@ header {
 	font-size: inherit;
 	font-weight: bold;
 	border: 1px solid #c9d0e1;
-	background: none;
+	background-color: #f7f7fa;
 	color: inherit;
 	text-transform: uppercase;
-	padding: 1.7rem 3.4rem;
+	padding: 1.9rem 3.4rem;
+	font-family: 'Metropolis-SemiBold', Georgia, sans-serif;
+}
+
+header .button {
+	background: none;
 }
 
 .button > i {
-	margin-right: 1rem;
+	margin-right: 1.6rem;
 }
 
 h2 {
 	text-transform: uppercase;
-	font-weight: bold;
+	font-family: 'Metropolis-Bold', Georgia, sans-serif;
+	/*font-weight: bold;*/
 	color: #6e768f;
-	margin-bottom: 12px;
+	margin-bottom: 13px;
+	letter-spacing: 0.04em;
 }
 
 h2 > i {
@@ -88,13 +95,14 @@ h2 > i {
 
 .order-section p {
 	line-height: 1.5;
-	/*letter-spacing: 0.02rem;*/
-	margin-bottom: 18px;
+	letter-spacing: -0.01em;
+	margin-bottom: 17px;
 }
 
-a {
+.order-section a {
 	text-decoration: none;
 	color: #6e768f;
+	margin-right: 2rem;
 }
 
 section {
@@ -130,21 +138,22 @@ section {
 
 .order-header-wrapper > h2 {
 	margin-top: 0.9rem;
+	margin-bottom: 3.4rem;
 }
 
-.order-header-wrapper > table {
+/*.order-header-wrapper > */table {
 	width: 100%;
-	margin-top: 3.4rem;
 }
 
-.order-header-wrapper tr {
+/*.order-header-wrapper */tr {
 	height: 2.4rem;
 }
 
-.order-header-wrapper th {
+/*.order-header-wrapper */th {
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
+	letter-spacing: 0.05em;
 	width: 25%;
 }
 
@@ -156,22 +165,21 @@ section {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #f7f7fa;
 }
 
-.order-buttons-block button:first-child {
+.order-buttons-block .button-accent {
 	margin-bottom: 1.2rem;
 	background-color: #5fcac6;
 	color: #fff;
+	border-color: #54aca9;
 }
 
 .form-section {
 	padding: 100px 110px 0px 130px;
-	border: ;
 	border: 1px solid #c9d0e1;
 	border-radius: 0 0 3px 3px;
 	border-top: none;
-	height: 600px;
+	counter-reset: section;
 }
 
 .form-section .header-wrapper {
@@ -183,24 +191,24 @@ section {
 	font-size: 2.1rem;
 	text-align: center;
 	color: #6e768f;
-	/*letter-spacing: 0.3rem;*/
+	letter-spacing: 0.075em;
 	position: relative;
 	border-bottom: 1px solid #c9d0e1;
 	/*have to try do underline whith pseudo element*/
 	padding: 0.2rem 0.5rem 1.2rem;
 	margin: auto;
+	margin-bottom: 7.2rem;
 }
 
 .radio-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 7.2rem;
 }
 
 .radio-wrapper .select-wrapper {
-	width: 277px;
-	height: 198px;
+	width: 279px;
+	height: 200px;
 	border: 1px solid #c9d0e1;
 	border-radius: 3px;
 	/*margin: 0 1.4rem;*/
@@ -238,8 +246,8 @@ section {
 	color: #9098b8;
 	text-align: center;
 	font-size: 1.6rem;
-	margin-top: 153px;
-	/*letter-spacing: 0.11rem;*/
+	margin-top: 154px;
+	letter-spacing: 0.05rem;
 	font-weight: bold;
 }
 
@@ -264,19 +272,86 @@ input[name=var]:checked + .select-wrapper > i {
 	display: block;
 }
 
-.fieldset-wrapper {
-	margin-top: 100px;
+fieldset {
+	margin-bottom: 100px;
 }
 
 .fieldset-wrapper > h3 {
-	font-size: 2.4rem;
+	font-size: 2.3rem;
 	font-weight: bold;
-	color: #9098b8;
+	color: #6e768f;
 	padding: 1rem 0;
-	/*letter-spacing: 0;*/
+	letter-spacing: -0.03em;
+	margin-bottom: 4.4rem;
+	position: relative;
 }
 
+.fieldset-wrapper > h3:before {
+  counter-increment: section;
+  content: counter(section);
+  box-sizing: border-box;
+  height: 43px;
+  width: 43px;
+  position: absolute;
+  left: -71px;
+  top: 0px;
+  border: 1px solid #6e768f;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 1.8rem;
+}
 
+.form-section .button {
+	color: #9098b8;
+	text-transform: none;
+	font-size: 1.6rem;
+	font-weight: normal;
+	letter-spacing: -0.04em;
+	margin-bottom: 39px;
+	padding: 1.7rem 3.4rem;
+}
 
+.upload-table-wrapper {
+	border: 1px solid #e6e8ee;
+	border-radius: 3px;
+	padding: 1.5rem 4rem 2.2rem;
+}
+
+.upload-table tr {
+	height: 40px;
+}
+
+.upload-table th {
+	width: 25%;
+	padding-left: 3px;
+	font-size: 1.1rem;
+	font-family: 'Metropolis-SemiBold', Georgia, sans-serif;
+}
+
+.upload-table th:first-child {
+	width: 40%;
+}
+
+.upload-table th:last-child {
+	width: 10%;
+}
+
+.upload-table td {
+	font-size: 1.6rem;
+	padding: 3px;
+}
+
+.upload-table th, .upload-table td {
+	vertical-align: middle;
+}
+
+.upload-table td:first-child i {
+	margin-right: 2.4rem;
+}
+
+.upload-table td:last-child, .upload-table th:last-child {
+	text-align: center;
+}
 
 
