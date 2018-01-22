@@ -182,6 +182,11 @@ section {
 	counter-reset: section;
 }
 
+form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .form-section .header-wrapper {
 	display: flex;
 }
@@ -274,16 +279,17 @@ input[name=var]:checked + .select-wrapper > i {
 
 fieldset {
 	margin-bottom: 98px;
+	width: 100%;
 }
 
 .fieldset-wrapper > h3 {
 	font-size: 2.3rem;
 	font-weight: bold;
 	color: #6e768f;
-	padding: 1rem 0;
 	letter-spacing: -0.03em;
 	margin-bottom: 4.4rem;
 	position: relative;
+	margin-left: -7rem;
 }
 
 .fieldset-wrapper > h3:before {
@@ -292,9 +298,8 @@ fieldset {
 	box-sizing: border-box;
 	height: 2.4em;
 	width: 2.4em;
-	position: absolute;
-	left: -4em;
-	top: 0px;
+	margin-right: 1.5em;
+	display: inline-block;
 	border: 2px solid #6e768f;
 	border-radius: 50%;
 	text-align: center;
@@ -454,6 +459,20 @@ fieldset {
   vertical-align: middle;
   margin-right: 0.4em;
 }
+
+fieldset.tone {
+	width: 46%;
 }
+
+fieldset.time {
+	width: 54%;
+}
+
+fieldset.time h3 {
+	margin-left: 0;
+}
+
+
+
 
 
