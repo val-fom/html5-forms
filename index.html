@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<link rel="stylesheet" href="webfonts/fonts/fonts.css">
+	<link rel="stylesheet" href="webfonts/metropolis/metropolis.css">
 </head>
 <body>
 
@@ -20,93 +21,124 @@
 
 	<section class="order-section">
 
-			<div class="left">
+		<div class="left">
 
-				<div class="order-header-wrapper">
-					<h2>
-						<i class="fas fa-clipboard"></i>
-						Your order
-					</h2>
-					<table>
-						<tr>
-							<th>Items</th>
-							<th>Details</th>
-							<th>Price</th>
-							<th>Delivery</th>
-						</tr>
-						<tr>
-							<td>2 documents</td>
-							<td>2 languages</td>
-							<td value="USD:696.06">$ 696.06</td>
-							<td>48 hours*</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="order-buttons-block">
-					<button name="Place order" class="button button-accent">Place order</button>
-					<button name="Print a quote<" class="button">Print a quote</button>
-				</div>
-
-			</div>
-
-			<div class="right">
+			<div class="order-header-wrapper">
 				<h2>
-					<i class="far fa-life-ring"></i>
-					Help center
+					<i class="fas fa-clipboard"></i>
+					Your order
 				</h2>
-				<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
-				<address class='address-block'>
-					<a href="tel:+971(0)555 555">+971(0)555 555</a>
-					<a href="mailto:help@qtest.com">help@qtest.com</a>
-				</address>
+				<table>
+					<tr>
+						<th>Items</th>
+						<th>Details</th>
+						<th>Price</th>
+						<th>Delivery</th>
+					</tr>
+					<tr>
+						<td>2 documents</td>
+						<td>2 languages</td>
+						<td value="USD:696.06">$ 696.06</td>
+						<td>48 hours*</td>
+					</tr>
+				</table>
 			</div>
+
+			<div class="order-buttons-block">
+				<button name="Place order" class="button button-accent">Place order</button>
+				<button name="Print a quote<" class="button">Print a quote</button>
+			</div>
+
+		</div>
+
+		<div class="right">
+			<h2>
+				<i class="far fa-life-ring"></i>
+				Help center
+			</h2>
+			<p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+			<address class='address-block'>
+				<a href="tel:+971(0)555 555">+971(0)555 555</a>
+				<a href="mailto:help@qtest.com">help@qtest.com</a>
+			</address>
+		</div>
 
 	</section>
 
 	<section class="form-section">
 
+		<form>
 
-	<form>
+			<fieldset>
 
-		<fieldset>
+				<div class="header-wrapper">
+					<h1>Select what you want to translate</h1>
+				</div>
 
-			<div class="header-wrapper">
-				<h1>Select what you want to translate</h1>
-			</div>
+				<div class="radio-wrapper">
 
-			<div class="radio-wrapper">
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="website"/>
+						<div class="select-wrapper" id="website">
+							<i class="fas fa-check"></i>
+							<p>Website</p>
+						</div>
+					</label>
 
-				<label class="select-type">
-					<input required hidden type="radio" name="var" value="website"/>
-					<div class="select-wrapper" id="website">
-						<i class="fas fa-check"></i>
-						<p>Website</p>
-					</div>
-				</label>
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="documents"/>
+						<div class="select-wrapper" id="documents">
+							<i class="fas fa-check"></i>
+							<p>Documents</p>
+						</div>
+					</label>
 
-				<label class="select-type">
-					<input required hidden type="radio" name="var" value="documents"/>
-					<div class="select-wrapper" id="documents">
-						<i class="fas fa-check"></i>
-						<p>Documents</p>
-					</div>
-				</label>
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="social_account"/>
+						<div class="select-wrapper" id="social-account">
+							<i class="fas fa-check"></i>
+							<p>Social Account</p>
+						</div>
+					</label>
 
-				<label class="select-type">
-					<input required hidden type="radio" name="var" value="social_account"/>
-					<div class="select-wrapper" id="social-account">
-						<i class="fas fa-check"></i>
-						<p>Social Account</p>
-					</div>
-				</label>
-		
-			</div>
+				</div>
 
-			
-		</fieldset>
 
-	</form>
+			</fieldset>
+
+			<fieldset>
+
+				<div class="fieldset-wrapper">
+					<h3>Upload your documents</h3>
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+
+				<h3>Choose your languages pairings</h3>
+
+			</fieldset>
+
+			<fieldset>
+
+				<h3>Select your desired tone</h3>
+
+			</fieldset>
+
+			<fieldset>
+
+				<h3>Tell us how urgent this job is</h3>
+
+			</fieldset>
+
+			<fieldset>
+
+				<h3>Sign up and choose a payment method</h3>
+
+			</fieldset>
+
+		</form>
 
 
 

@@ -10,9 +10,9 @@ body {
 	margin: auto;
 	background-color: #eceef4;
 	color: #a5abc5;
-	font-family: 'Proxima Nova', Georgia, sans-serif;
+	font-family: 'mentropolis_regular', 'Proxima Nova', Georgia, sans-serif;
 	font-size: 1.2rem;
-	letter-spacing: 0.05rem;
+	/*letter-spacing: 0.05rem;*/
 }
 
 header {
@@ -88,7 +88,7 @@ h2 > i {
 
 .order-section p {
 	line-height: 1.5;
-	letter-spacing: 0.02rem;
+	/*letter-spacing: 0.02rem;*/
 	margin-bottom: 18px;
 }
 
@@ -166,7 +166,7 @@ section {
 }
 
 .form-section {
-	padding-top: 100px;
+	padding: 100px 110px 0px 130px;
 	border: ;
 	border: 1px solid #c9d0e1;
 	border-radius: 0 0 3px 3px;
@@ -183,7 +183,7 @@ section {
 	font-size: 2.1rem;
 	text-align: center;
 	color: #6e768f;
-	letter-spacing: 0.3rem;
+	/*letter-spacing: 0.3rem;*/
 	position: relative;
 	border-bottom: 1px solid #c9d0e1;
 	/*have to try do underline whith pseudo element*/
@@ -193,7 +193,7 @@ section {
 
 .radio-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 7.2rem;
 }
@@ -203,11 +203,11 @@ section {
 	height: 198px;
 	border: 1px solid #c9d0e1;
 	border-radius: 3px;
-	margin: 0 1.4rem;
+	/*margin: 0 1.4rem;*/
 	background-color: #f7f7fa;
 	background-repeat: no-repeat;
 	background-position: 50% 33%;
-	background-size: 10rem;
+	background-size: 9.4rem;
 	position: relative;
 }
 
@@ -238,8 +238,8 @@ section {
 	color: #9098b8;
 	text-align: center;
 	font-size: 1.6rem;
-	margin-top: 149px;
-	letter-spacing: 0.11rem;
+	margin-top: 153px;
+	/*letter-spacing: 0.11rem;*/
 	font-weight: bold;
 }
 
@@ -263,3 +263,20 @@ input[name=var]:checked + .select-wrapper:after {
 input[name=var]:checked + .select-wrapper > i {
 	display: block;
 }
+
+.fieldset-wrapper {
+	margin-top: 100px;
+}
+
+.fieldset-wrapper > h3 {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #9098b8;
+	padding: 1rem 0;
+	/*letter-spacing: 0;*/
+}
+
+
+
+
+
