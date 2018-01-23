@@ -284,7 +284,7 @@ fieldset {
 	width: 100%;
 }
 
-.fieldset-wrapper > h3 {
+.fieldset-wrapper > legend {
 	font-size: 2.3rem;
 	font-weight: bold;
 	color: #6e768f;
@@ -294,7 +294,7 @@ fieldset {
 	margin-left: -7rem;
 }
 
-.fieldset-wrapper > h3:before {
+.fieldset-wrapper > legend:before {
 	counter-increment: section;
 	content: counter(section);
 	box-sizing: border-box;
@@ -470,7 +470,7 @@ fieldset.tone {
 	width: 46%;
 }
 
-fieldset.tone h3 {
+fieldset.tone legend {
 	margin-bottom: 3.5rem;
 }
 
@@ -516,7 +516,7 @@ fieldset.time {
 	width: 54%;
 }
 
-fieldset.time h3 {
+fieldset.time legend {
 	margin-left: 0;
 	margin-bottom: 6.4rem;
 }
