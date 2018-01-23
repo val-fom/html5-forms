@@ -70,7 +70,7 @@
 
 		<form>
 
-			<fieldset>
+			<fieldset class="what-to-translate">
 
 				<div class="header-wrapper">
 					<h1>Select what you want to translate</h1>
@@ -175,7 +175,6 @@
 					<i class="fas fa-trash"></i>
 
 					<button class="button" id="add-language"><span>+</span> Add</button>
-
 				</div>
 
 			</fieldset>
@@ -183,6 +182,39 @@
 			<fieldset class="tone">
 				<div class="fieldset-wrapper">
 					<h3>Select your desired tone</h3>
+
+					<div class="radio-wrapper">
+
+						<label class="select-type">
+							<input required hidden type="radio" name="var" value="website"/>
+							<div class="select-wrapper" id="">
+								<i class="fas fa-check"></i>
+								<i class="far fa-comments"></i>
+								Friendly / Casual
+							</div>
+						</label>
+
+						<label class="select-type">
+							<input required hidden type="radio" name="var" value="documents"/>
+							<div class="select-wrapper" id="">
+								<i class="fas fa-check"></i>
+								<i class="fas fa-suitcase"></i>
+								Corporate / Pro
+							</div>
+						</label>
+
+						<label class="select-type">
+							<input required hidden type="radio" name="var" value="social_account"/>
+							<div class="select-wrapper" id="">
+								<i class="fas fa-check"></i>
+								<i class="fas fa-bullhorn"></i>
+								Media / Format
+							</div>
+						</label>
+
+					</div>
+
+
 				</div>
 			</fieldset>
 

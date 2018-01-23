@@ -205,18 +205,16 @@ form {
 	margin-bottom: 7.2rem;
 }
 
-.radio-wrapper {
+.what-to-translate .radio-wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
-.radio-wrapper .select-wrapper {
+.what-to-translate .radio-wrapper .select-wrapper {
 	width: 279px;
 	height: 200px;
 	border: 1px solid #c9d0e1;
 	border-radius: 3px;
-	/*margin: 0 1.4rem;*/
 	background-color: #f7f7fa;
 	background-repeat: no-repeat;
 	background-position: 50% 33%;
@@ -236,18 +234,7 @@ form {
 	background-image: url(../img/social_account.png);
 }
 
-.select-wrapper > i {
-	position: absolute;
-	color: #fff;
-	right: -6px;
-	top: -4px;
-	z-index: 2;
-	font-size: 1.7rem;
-	transform: rotate(-8deg);
-	display: none;
-}
-
-.select-wrapper > p {
+.what-to-translate .select-wrapper > p {
 	color: #9098b8;
 	text-align: center;
 	font-size: 1.6rem;
@@ -255,6 +242,8 @@ form {
 	letter-spacing: 0.05rem;
 	font-weight: bold;
 }
+
+/*--- CUSTOM RADIO STYLING ---*/
 
 input[name=var]:checked + .select-wrapper {
 	box-shadow: inset 0 0 0 4px #76a7e1, 0 0 0 1px #76a7e1;
@@ -273,9 +262,22 @@ input[name=var]:checked + .select-wrapper:after {
 	z-index: 1;
 }
 
-input[name=var]:checked + .select-wrapper > i {
+.select-wrapper > i.fa-check {
+	position: absolute;
+	color: #fff;
+	right: -6px;
+	top: -4px;
+	z-index: 2;
+	font-size: 1.7rem;
+	transform: rotate(-8deg);
+	display: none;
+}
+
+input[name=var]:checked + .select-wrapper > i.fa-check {
 	display: block;
 }
+
+/*-----------*/
 
 fieldset {
 	margin-bottom: 98px;
@@ -472,7 +474,38 @@ fieldset.time h3 {
 	margin-left: 0;
 }
 
+fieldset.tone h3 {
+	margin-bottom: 3.5rem;
+}
 
+.tone .radio-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 235px;
+}
 
+.tone .select-type {
+	width: 100%;
+}
+
+.tone .select-wrapper {
+  position: relative;
+  font-size: 1.6rem;
+  padding: 1.6em 1em;
+  border-radius: 3px;
+  border: 1px solid #d7d9e0;
+  box-sizing: border-box;
+  background-color: #f7f7fa;
+  color: #9098bf;
+  margin-bottom: 1.4em;
+  text-align: center;
+}
+
+.tone .select-wrapper i:not(.fa-check) {
+	font-size: 1.2em;
+	line-height: 0;
+	margin-right: 0.7em;
+	vertical-align: middle;
+}
 
 
