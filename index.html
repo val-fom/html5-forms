@@ -109,13 +109,15 @@
 			<fieldset class="upload">
 
 				<legend>Upload your documents</legend>
-				
-				<button name="Place order" class="button">
+
+				<label for="file-upload" class="button">
 					<i class="fas fa-cloud-upload-alt"></i>
 					Upload a new file
-				</button>
+				</label>
+				<input type="file" name="Place order" id="file-upload">
 
 				<div class="upload-table-wrapper">
+
 					<table class="upload-table">
 						<tbody>
 							<tr>
@@ -138,6 +140,7 @@
 							</tr>
 						</tbody>
 					</table>
+
 				</div>
 
 			</fieldset>
@@ -147,15 +150,18 @@
 				<legend>Choose your languages pairings</legend>
 
 				<div class="wrapper">
+
 					<label for="fromid">From</label>
 					<div class="select-style">
 						<select name="from" id="from-lang">
 							<option value="english">English</option>
 						</select>
 					</div>
+
 				</div>
 
 				<div class="wrapper">
+
 					<label for="to-lang">To</label>
 					<div class="select-style">
 						<select name="to" id="to-lang">
@@ -172,6 +178,7 @@
 					<i class="fas fa-trash"></i>
 
 					<button class="button" id="add-language"><span>+</span> Add</button>
+				
 				</div>
 
 			</fieldset>
@@ -210,6 +217,7 @@
 					</label>
 
 				</div>
+
 			</fieldset>
 
 			<fieldset class="time">
@@ -238,6 +246,60 @@
 			<fieldset class="payment">
 
 				<legend>Sign up and choose a payment method</legend>
+
+				<p>Already have an account with us? <a href="">Sign in</a>.</p>
+				
+				<label for="full-name">Full name</label>
+				<input type="text" value="Mathieu Mayer" name="full-name" id="full-name">
+
+				<label for="email">Email address</label>
+				<input type="text" value="mathieu.mm@me.com" name="email" id="email">
+
+				<label for="password">Choose a password</label>
+				<input type="password" value="123456789" name="password" id="password">
+				
+				<div class="radio-wrapper">
+
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="website"/>
+						<div class="select-wrapper" id="visa-mastercard">
+							<i class="fas fa-check"></i>
+						</div>
+					</label>
+
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="documents"/>
+						<div class="select-wrapper" id="paypal">
+							<i class="fas fa-check"></i>
+						</div>
+					</label>
+
+					<label class="select-type">
+						<input required hidden type="radio" name="var" value="social_account"/>
+						<div class="select-wrapper" id="amazon">
+							<i class="fas fa-check"></i>
+						</div>
+					</label>
+
+				</div>
+
+				<label for="card-number">Card number</label>
+				<input type="text" value="" name="card-number" id="card-number">
+
+				<label for="expiry-date">Expiry date</label>
+				<input type="text" value="dd / mm / yy" name="expiry-date" id="expiry-date">
+
+				<label for="code">Code</label>
+				<input type="password" value="" name="code" id="code">
+
+				
+
+
+
+
+
+
+
 
 			</fieldset>
 
