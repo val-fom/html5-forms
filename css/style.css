@@ -23,6 +23,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	padding: 0 1rem;
 }
 
 .logo-wrapper {
@@ -117,6 +118,7 @@ section {
 	display: flex;
 	border: 1px solid #c9d0e1;
 	border-radius: 4px 4px 0 0;
+	flex-wrap: wrap;
 }
 
 .order-section h2 {
@@ -152,13 +154,17 @@ section {
 	border-right: 1px solid #c9d0e1;
 	padding: 2.5rem 3.4rem 2rem 7.3rem;
 	position: relative;
+	flex-wrap: wrap;
+	margin-right: -1px;
 }
 
 .order-section > .right {
 	width: 353px;
+	min-width: 300px;
 	padding: 28px 32px 28px 73px;
 	box-sizing: border-box;
 	position: relative;
+	flex-grow: 1;
 }
 
 .order-header-wrapper {
@@ -170,20 +176,19 @@ section {
 	margin-bottom: 3.4rem;
 }
 
-/*.order-header-wrapper > */table {
+table {
 	width: 100%;
 }
 
-/*.order-header-wrapper */tr {
+tr {
 	height: 2.4rem;
 }
 
-/*.order-header-wrapper */th {
+th {
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'Metropolis-Bold', Georgia, sans-serif;
-	/*letter-spacing: 0.05em;*/
 	width: 25%;
 }
 
@@ -212,6 +217,8 @@ section {
 	border-top: none;
 	counter-reset: section;
 	margin-bottom: 12.7rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 form {
@@ -240,12 +247,17 @@ form {
 
 .what-to-translate .radio-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
+.what-to-translate .radio-wrapper .select-type {
+	flex-grow: 1;
+
+}
+
 .what-to-translate .radio-wrapper .select-wrapper {
-	width: 279px;
+	min-width: 200px;
 	height: 200px;
 	border: 1px solid #c9d0e1;
 	border-radius: 4px;
@@ -256,6 +268,7 @@ form {
 	position: relative;
 	cursor: pointer;
 	transition: opacity 0.3s;
+	margin: 0 1rem 2rem;
 }
 
 #website {
@@ -307,7 +320,7 @@ form {
 /*-----------*/
 
 fieldset {
-	margin-bottom: 98px;
+	margin-bottom: 8rem;
 	width: 100%;
 }
 
@@ -319,6 +332,7 @@ fieldset > legend {
 	margin-bottom: 4.4rem;
 	position: relative;
 	margin-left: -7rem;
+	word-wrap: normal;
 }
 
 fieldset > legend:before {
@@ -359,7 +373,9 @@ legend small {
 }
 
 .upload input[type="file"] {
-	display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .upload-table-wrapper {
@@ -411,6 +427,10 @@ legend small {
 	text-align: center;
 }
 
+fieldset.upload {
+	margin-bottom: 10rem;
+}
+
 /**
  * SELECT
  **/
@@ -425,6 +445,7 @@ legend small {
 	position: relative;
 	margin-right: 1.8em;
 	transition: opacity 0.3s;
+	margin-bottom: 4rem;
 }
 
 .select-style:after {
@@ -483,8 +504,10 @@ legend small {
 
 .languages .wrapper {
 	display: flex;
-	align-items: center;
-	margin-bottom: 40px;
+	flex-wrap: wrap;
+	align-items: baseline;
+
+	/*margin-bottom: 4rem;*/
 }
 
 .languages .wrapper:last-child {
@@ -516,6 +539,10 @@ legend small {
 	font-family: 'Metropolis-Regular', Georgia, sans-serif;
 	vertical-align: middle;
 	margin-right: 0.4em;
+}
+
+fieldset.languages {
+	margin-bottom: 5.5rem;
 }
 
 /**
