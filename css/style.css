@@ -900,6 +900,7 @@ footer {
 .footer-item-wrapper:last-child {
 	width: 10rem;
 	flex-grow: 0;
+	/*padding: 0;*/
 }
 
 .footer-item-wrapper > h4 {
@@ -1056,6 +1057,16 @@ footer {
 		width: 100%;
 		padding-right: 1rem;
 	}
+
+	.footer-section {
+		padding-bottom: 5rem;
+	}
+
+	.footer-item-wrapper:last-child {
+		padding: 0;
+	}
+
+
 
 	.footer-item-wrapper .logo {
 		margin: auto;
