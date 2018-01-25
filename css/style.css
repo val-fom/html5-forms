@@ -19,6 +19,7 @@ header {
 	max-width: 1140px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	height: 230px;
 	justify-content: space-between;
 	align-items: center;
@@ -159,7 +160,7 @@ section {
 }
 
 .order-section > .right {
-	width: 353px;
+	width: 10%;
 	min-width: 300px;
 	padding: 28px 32px 28px 73px;
 	box-sizing: border-box;
@@ -169,6 +170,8 @@ section {
 
 .order-header-wrapper {
 	flex-grow: 1;
+	width: 70%;
+	margin-bottom: 1.5rem;
 }
 
 .order-header-wrapper > h2 {
@@ -194,12 +197,19 @@ th {
 
 .order-buttons-block {
 	width: 170px;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	height: min-content;
 }
 
 .order-buttons-block button {
 	width: 100%;
+	max-width: 170px;
 	margin-left: auto;
 	margin-right: auto;
+	height: min-content;
+
 }
 
 /*.order-buttons-block */.button-accent {
@@ -257,7 +267,7 @@ form {
 }
 
 .what-to-translate .radio-wrapper .select-wrapper {
-	min-width: 200px;
+	min-width: 115px;
 	height: 200px;
 	border: 1px solid #c9d0e1;
 	border-radius: 4px;
@@ -322,6 +332,7 @@ form {
 fieldset {
 	margin-bottom: 8rem;
 	width: 100%;
+	min-width: 25rem;
 }
 
 fieldset > legend {
@@ -329,10 +340,11 @@ fieldset > legend {
 	font-weight: bold;
 	color: #6e768f;
 	letter-spacing: -0.03em;
-	margin-bottom: 4.4rem;
+	margin-bottom: 4rem;
 	position: relative;
-	margin-left: -7rem;
-	word-wrap: normal;
+	/*margin-left: -7rem;*/
+	/*white-space: nowrap;*/
+	line-height: 2.2em;
 }
 
 fieldset > legend:before {
@@ -341,13 +353,15 @@ fieldset > legend:before {
 	box-sizing: border-box;
 	height: 2.4em;
 	width: 2.4em;
-	margin-right: 1.5em;
+	margin-right: 1em;
 	display: inline-block;
 	border: 2px solid #6e768f;
 	border-radius: 50%;
 	text-align: center;
 	font-size: 0.78em;
 	line-height: 2.4em;
+	position: absolute;
+	left: -4em;
 }
 
 legend small {
@@ -355,6 +369,7 @@ legend small {
 	font-size: 0.5em;
 	margin-left: 1em;
 	letter-spacing: normal;
+	display: inline-block;
 }
 
 .upload .button {
@@ -399,6 +414,10 @@ legend small {
 	width: 40%;
 }
 
+.upload-table td {
+	white-space: nowrap;
+}
+
 .upload-table th:last-child {
 	width: 10%;
 }
@@ -408,7 +427,7 @@ legend small {
 	padding: 3px;
 }
 
-.upload-table th, .upload-table td {
+.upload-table tr > * {
 	vertical-align: middle;
 }
 
@@ -542,7 +561,7 @@ fieldset.upload {
 }
 
 fieldset.languages {
-	margin-bottom: 5.5rem;
+	margin-bottom: 4.7rem;
 }
 
 /**
@@ -551,7 +570,8 @@ fieldset.languages {
 
 fieldset.tone {
 	width: 46%;
-	margin-bottom: 93px;
+	margin-bottom: 4.7rem;
+	min-width: 25rem;
 }
 
 fieldset.tone legend {
@@ -600,12 +620,16 @@ fieldset.tone legend {
 
 fieldset.time {
 	width: 54%;
-	margin-bottom: 93px;
+  margin-bottom: 8.3rem;
 }
 
 fieldset.time legend {
 	margin-left: 0;
 	margin-bottom: 6.4rem;
+}
+
+fieldset.time legend:before {
+	position: initial;
 }
 
 
@@ -765,23 +789,38 @@ input[type=range]::-webkit-slider-runnable-track {
 .payment .radio-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 7.8rem;
+
+}
+
+.payment .radio-wrapper .select-type {
+	flex-grow: 1;
+	max-width: 220px;
+	margin-right: 3.2rem;
+	/*min-width: 150px;*/
+}
+
+.payment .radio-wrapper .select-type:last-child {
+	margin-right: 0;
 }
 
 .payment .radio-wrapper .select-wrapper {
-	width: 220px;
+
+	/*max-width: 220px;*/
 	height: 100px;
 	border: 1px solid #c9d0e1;
 	border-radius: 4px;
 	background-color: #f7f7fa;
 	background-repeat: no-repeat;
 	background-position: 50%;
-	background-size: 50%;
+	background-size: 11rem;
 	position: relative;
 	cursor: pointer;
 	transition: opacity 0.3s;
 	box-sizing: border-box;
-	margin-right: 3.2rem;
-	margin-bottom: 7.8rem;
+	/*margin-bottom: 7.8rem;*/
 }
 
 #visa-mastercard {
@@ -989,3 +1028,137 @@ footer {
 	-webkit-font-smoothing: antialiased;
 }
 
+/* responsive */
+@media screen and (max-width: 880px) {
+
+	.form-section {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	fieldset > legend:before {
+	position: initial;
+
+	}
+	.upload-table td:first-child i {
+		display: none;
+	}
+
+	fieldset.time,
+	fieldset.tone {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.upload-table tr *:nth-child(3) {
+		display: none;
+	}
+
+	.form-section {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	fieldset > legend {
+		font-size: 2rem;
+	}
+
+	.what-to-translate .radio-wrapper .select-wrapper {
+		  background-size: 7.4rem;
+	}
+
+	.tone .radio-wrapper {
+		max-width: unset;
+	}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.form-section fieldset {
+		margin-bottom: 10rem;
+	}
+
+	.form-section fieldset > legend {
+		text-align: center;
+		line-height: 1.5em;
+	}
+
+	.form-section fieldset > legend:before {
+		position: absolute;
+		left: 50%;
+		margin-left: -1.9rem;
+		top: -5rem;
+	}
+
+	.logo-wrapper {
+		position: initial;
+		margin: 0;
+	}
+
+	.upload-table tr *:nth-child(2) {
+		display: none;
+	}
+
+	.upload-table-wrapper {
+		padding: 1.5rem 2rem 2.2rem;
+	}
+
+	.order-section > .right,
+	.order-section > .left {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.order-section h2 {
+		margin-left: 0;
+	}
+
+	.what-to-translate .radio-wrapper {
+		display: block;
+	}
+
+	.what-to-translate .radio-wrapper .select-wrapper {
+		height: 9rem;
+		background-position: 10% 50%;
+		background-size: 6rem;
+	}
+
+	.what-to-translate .radio-wrapper .select-wrapper p {
+		margin-top: 0;
+		position: absolute;
+		left: 40%;
+		top: 50%;
+		margin-top: -0.5em;
+	}
+
+	header {
+		justify-content: space-around;
+	}
+
+	header .logo-wrapper {
+		width: 100%;
+		order: -1;
+	}
+
+	header .logo-wrapper .logo {
+		margin: auto;
+	}
+
+	.payment .radio-wrapper {
+		display: block;
+	}
+	
+	.payment .radio-wrapper .select-wrapper {
+		height: 7rem;
+	}
+
+}
+
+
+
+/* --------------------- */
