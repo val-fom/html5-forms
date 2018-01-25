@@ -77,8 +77,9 @@ header {
 }
 
 header .button {
-	padding-right: 3.4rem;
-	padding-left: 3.4rem;
+	padding: 1.9rem 3.4rem;
+	min-width: 16rem;
+	background: none;
 }
 
 .button:hover,
@@ -96,9 +97,6 @@ a {
 	color: inherit;
 }
 
-header .button {
-	background: none;
-}
 
 header .button > i {
 	margin-right: 1.6rem;
@@ -835,21 +833,29 @@ input[type=range]::-webkit-slider-runnable-track {
 	background-image: url(../img/amazon.png);
 }
 
-#card-number {
-	width: 344px;
+.inner input {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.inner.card-number {
+	width: 38rem;
+}
+
+.inner.expiry-date {
+	width: 17rem;
 }
 
 #expiry-date {
-	width: 135px;
 	text-align: center;
 }
 
-#code {
-	width: 67px;
+.inner.code {
+	width: 10.5rem;
 }
 
 fieldset.payment {
-	margin-bottom: 42px;
+	margin-bottom: 38px;
 }
 
 /**
@@ -858,6 +864,7 @@ fieldset.payment {
 
 .fieldset-bottom .wrapper {
 	text-align: right;
+	line-height: 5em;
 }
 
 .fieldset-bottom button {
@@ -872,12 +879,8 @@ fieldset.payment {
 	display: inline-block;
 }
 
-.fieldset-bottom a {
-	/*color: inherit;*/
-}
-
 .fieldset-bottom {
-	margin-bottom: 7.4rem;
+	margin-bottom: 6.8rem;
 }
 
 /**
@@ -891,8 +894,8 @@ footer {
 
 .footer-section {
 	display: flex;
-	padding-top: 10rem;
-	padding-bottom: 9.6rem;
+	padding: 7rem 1rem 9.6rem;
+	/*flex-wrap: wrap;*/
 }
 
 .footer-item-wrapper {
@@ -901,6 +904,7 @@ footer {
 	box-sizing: border-box;
 	padding: 0 7rem 0 4rem;
 	position: relative;
+	margin-top: 3rem;
 }
 
 .footer-item-wrapper:first-child {
@@ -1031,7 +1035,21 @@ footer {
 /* responsive */
 @media screen and (max-width: 880px) {
 
+	.footer-section {
+		flex-wrap: wrap;
+	}
+
+	.footer-section .footer-item-wrapper {
+		width: 50%;
+		flex-grow: 0;
+	}
+
+	.footer-item-wrapper .logo {
+		position: initial;
+	}
+
 	.form-section {
+		padding-top: 60px;
 		padding-right: 40px;
 		padding-left: 40px;
 	}
@@ -1051,7 +1069,16 @@ footer {
 
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 520px) {
+
+	.footer-section .footer-item-wrapper {
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	.footer-item-wrapper .logo {
+		margin: auto;
+	}
 
 	.upload-table tr *:nth-child(3) {
 		display: none;
@@ -1063,7 +1090,7 @@ footer {
 	}
 
 	fieldset > legend {
-		font-size: 2rem;
+		/*font-size: 2rem;*/
 	}
 
 	.what-to-translate .radio-wrapper .select-wrapper {
@@ -1073,11 +1100,6 @@ footer {
 	.tone .radio-wrapper {
 		max-width: unset;
 	}
-
-}
-
-
-@media screen and (max-width: 480px) {
 
 	.form-section fieldset {
 		margin-bottom: 10rem;
@@ -1093,6 +1115,28 @@ footer {
 		left: 50%;
 		margin-left: -1.9rem;
 		top: -5rem;
+
+}
+
+
+@media screen and (max-width: 480px) {
+	
+	form {
+		padding: 0;
+	}
+
+	header .button {
+		padding: 1.9rem 2.7rem;
+		min-width: 10rem;
+	}
+
+	.form-section {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	th {
+		width: initial;
 	}
 
 	.logo-wrapper {
@@ -1110,8 +1154,8 @@ footer {
 
 	.order-section > .right,
 	.order-section > .left {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	.order-section h2 {
@@ -1157,8 +1201,18 @@ footer {
 		height: 7rem;
 	}
 
+	.inner.card-number {
+	  width: 100%;
+	  margin-right: 0;
+	}
+
+
 }
 
-
+@media screen and (max-width: 430px) {
+	.fieldset-bottom .wrapper {
+		text-align: center;
+	}
+}
 
 /* --------------------- */
