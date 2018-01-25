@@ -3,6 +3,7 @@ html {
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
+	min-width: 320px;
 }
 
 body {
@@ -852,6 +853,14 @@ fieldset.payment {
 .fieldset-bottom .wrapper {
 	text-align: right;
 	line-height: 5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.fieldset-bottom .wrapper input[type=checkbox] {
+	margin-right: 1em;
 }
 
 .fieldset-bottom button {
@@ -860,6 +869,10 @@ fieldset.payment {
 	margin-left: 2.5rem;
 	border-radius: 5px;
 	margin-bottom: 0;
+}
+
+.fieldset-bottom a {
+	text-decoration: underline;
 }
 
 .fieldset-bottom p {
@@ -1017,6 +1030,14 @@ footer {
 /* responsive */
 @media screen and (max-width: 880px) {
 
+	fieldset.payment {
+		margin-bottom: 0;
+	}
+
+	.fieldset-bottom .wrapper label {
+		width: 100%;
+	}
+
 	.footer-section {
 		flex-wrap: wrap;
 	}
@@ -1049,6 +1070,10 @@ footer {
 		width: 100%;
 	}
 
+	.form-section {
+		margin-bottom: 5rem;
+	}
+
 }
 
 @media screen and (max-width: 520px) {
@@ -1065,8 +1090,6 @@ footer {
 	.footer-item-wrapper:last-child {
 		padding: 0;
 	}
-
-
 
 	.footer-item-wrapper .logo {
 		margin: auto;
@@ -1089,9 +1112,11 @@ footer {
 		max-width: unset;
 	}
 
-	.form-section fieldset {
+	.form-section fieldset:not(.payment) {
 		margin-bottom: 10rem;
 	}
+
+
 
 	.form-section fieldset > legend {
 		text-align: center;
@@ -1103,6 +1128,14 @@ footer {
 		left: 50%;
 		margin-left: -1.9rem;
 		top: -5rem;
+	}
+
+	.payment .inner input,
+	.payment .inner {
+		width: 100%;
+		margin-right: 0;
+	}
+
 
 }
 
@@ -1112,10 +1145,10 @@ footer {
 		padding: 0;
 	}
 
-	header .button {
-		padding: 1.9rem 2.7rem;
-		min-width: 10rem;
-	}
+header .button {
+  padding: 1.8rem 2rem;
+  min-width: 14rem;
+}
 
 	.form-section {
 		padding-right: 15px;
@@ -1193,10 +1226,28 @@ footer {
 	  margin-right: 0;
 	}
 
+	.form-section {
+		margin-bottom: 0;
+	}
+
 }
 
 @media screen and (max-width: 430px) {
-	.fieldset-bottom .wrapper {
+
+	.order-buttons-block button {
+		max-width: unset;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.fieldset-bottom .wrapper > * {
+		width: 100%;
+		margin: 1rem;
+	}
+
+	.upload .button {
+		display: block;
 		text-align: center;
 	}
+
 }
